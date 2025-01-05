@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: #cef53d;
+}
+
+nav {
+    background-color: none;
+    padding: 50px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-size: 50px;
+}
+
+nav .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+nav a {
+    color: #313131;
+    font-weight: 700;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+section {
+    /* background-color: red; */
+    padding: 50px 60px;
+}
+
+section .hero-text1 {
+    /* background-color: blue; */
+    display: flex;
+    flex: start;
+    justify-content: space-between;
+}
+
+.hero-text1 h1 {
+    font-size: 140px;
+    text-transform: uppercase;
+    line-height: 130px;
+    font-weight: 750;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-text1 .video {
+    width: 350px;
+    /* Set desired width */
+    margin-top: 15px;
+    height: 110px;
+    /* Set desired height */
+    background-color: black;
+    /* Maintain background color */
+    border-radius: 100px;
+    /* Keep rounded edges */
+    overflow: hidden;
+    /* Ensure no overflow is visible */
+    position: relative;
+    /* Ensure iframe can be positioned inside */
+}
+
+.hero-text1 .video iframe {
+    position: absolute;
+    /* Allow precise control over placement */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Remove borders */
+    transform: scale(3.2);
+    /* Scale to stretch the video */
+    transform-origin: center;
+    /* Keep the scaling centered */
+}
+
+.video .play {
+    height: 110px;
+    width: 110px;
+    margin-left: 1px;
+    background-color: black;
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    /* Center content inside the overlay */
+    align-items: center;
+    /* Vertically center content */
+    justify-content: center;
+    /* Horizontally center content */
+    z-index: 2;
+
+}
+
+.play i {
+    color: rgb(255, 4, 4);
+    font-size: 50px;
+
+}
+
+section .hero-text2 {
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    align-items: flex-start;
+    /* Align items at the top */
+    justify-content: space-between;
+    /* Push items to edges */
+    gap: 20px;
+    /* Optional: space between <h1> and <p> */
+    margin-left: 10px;
+
+}
+
+.hero-text2 h1 {
+    font-size: 140px;
+    text-transform: uppercase;
+    line-height: 130px;
+    font-weight: 900;
+    background-color: red;
+
+}
+
+.hero-text2 p {
+    font-size: 25px;
+    width: 500px;
+    /* Limit the width of the paragraph */
+    margin: 0;
+    font-weight: 700;
+    text-align: justify center;
+    padding: 18px;
+    color: #313131;
+    margin-top: 5px;
+    /* Remove default margin */
+}
+
+/* Parent container to hold both elements */
+.elements-container {
+    display: flex;
+    /* Enable Flexbox */
+    gap: 20px;
+    /* Add space between elements */
+    margin-top: 40px;
+    /* Adjust margin from top if needed */
+}
+
+/* Element 1 styles */
+.element1 {
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #cef53d;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.element1 h2 {
+    text-align:center;
+    margin-top: 10px;
+    font-size: larger;
+    
+}
+/* Element 2 styles */
+.element2 {
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #cef53d;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.element2 h2 {
+    text-align:center;
+    margin-top: 10px;
+    font-size: larger;
+    
+}
+
+
+.backgroundimg {
+    padding: 30px 100px;
+    background-color: #cef53d;
+}
+
+body {
+    background-color: #cef53d; /* Match the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .line-container {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #a1c639; /* Match the dot color */
+    border-radius: 50%;
+  }
+  
+  .line {
+    flex: 1; /* Expand the line to fill available space */
+    height: 2px; /* Adjust line thickness */
+    background-color: #a1c639; /* Match the line color */
+  }
+  
+  .circles {
+    display: flex;
+    gap: 5px; /* Add space between circles */
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #a1c639; /* Match circle border color */
+    border-radius: 50%;
+  }
+  
